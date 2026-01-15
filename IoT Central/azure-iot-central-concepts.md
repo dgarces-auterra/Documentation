@@ -6,6 +6,7 @@ This Markdown documentation provides a clear, professional overview of the key A
 
 ## 1. PaaS vs. aPaaS: Choosing Your Path
 
+
 When building an IoT solution in Azure, you generally choose between two architectural approaches: **Platform-as-a-Service (PaaS)** or **Application-Platform-as-a-Service (aPaaS)**.
 
 | Feature        | **PaaS (The Custom Path)**                                         | **aPaaS - IoT Central (The Managed Path)**                |
@@ -14,6 +15,8 @@ When building an IoT solution in Azure, you generally choose between two archite
 | **Control**    | Offers high customization and granular control over every component. | Focuses on speed and business logic by reducing management overhead. |
 | **Complexity** | Requires high cloud expertise to scale, secure, and maintain.        | Simplifies complex infrastructure tasks like high availability and security. |
 | **Analogy**    | Building a car from individual parts.                               | Leasing a car that comes with maintenance included.       |
+
+![PaaS vs aPaaS comparison](img/Image_5.png)
 
 ---
 
@@ -26,6 +29,8 @@ A **Device Template** is the blueprint that defines how your device interacts wi
   - *Read-only (Device to Cloud):* The device reports its state (e.g., "valve is open").
   - *Writable (Cloud to Device):* An operator sets a value (e.g., "target temperature") that is sent to the device.
 - **Commands:** Specific actions triggered by an operator to be executed on the device, such as a remote "reboot".
+
+![PaaS vs aPaaS comparison](img/Image_4.png)
 
 ---
 
@@ -42,6 +47,8 @@ You can define your device capabilities using two main strategies depending on w
 
 - **Process:** You create a device model using tools like Visual Studio Code (using Digital Twin Definition Language - DTDL) and implement it in the device code first.
 - **Usage:** When the device connects, IoT Central can automatically discover the model from a repository and create the template for you, ensuring the cloud perfectly matches the physical device.
+
+![PaaS vs aPaaS comparison](img/Image_3.png)
 
 ---
 
@@ -64,6 +71,6 @@ IoT Central acts as a hub that feeds data into different "paths" to extract busi
 - **Purpose:** Connecting IoT data to existing corporate workflows (CRM, ERP).
 - **Implementation:** Leveraging the **REST API** to allow external apps (like Dynamics 365) to manage devices or read data, and using **Azure Logic Apps** to automate business tasks like opening service tickets.
 
----
+![PaaS vs aPaaS comparison](img/Image_3.png)
 
-Would you like me to generate a specific **DTDL (Digital Twin Definition Language)** example for a device template to include in this documentation?
+---
