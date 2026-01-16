@@ -71,6 +71,6 @@ IoT Central acts as a hub that feeds data into different "paths" to extract busi
 - **Purpose:** Connecting IoT data to existing corporate workflows (CRM, ERP).
 - **Implementation:** Leveraging the **REST API** to allow external apps (like Dynamics 365) to manage devices or read data, and using **Azure Logic Apps** to automate business tasks like opening service tickets.
 
-![PaaS vs aPaaS comparison](img/Image_3.png)
+![PaaS vs aPaaS comparison](img/Image_1.png)
 
 ---
